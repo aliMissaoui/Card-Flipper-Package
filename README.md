@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-# Animated White-Black Splash Screen
+# Animated Card Flipper Screen
 
 **Card Flipper Screen** package lets you add an animated card flipper dashboard to your Flutter app.
 

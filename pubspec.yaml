@@ -1,6 +1,6 @@
 name: card_flipper
 description: Flutter package to implement an animated card flipper dashboard.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/aliMissaoui/Card-Flipper-Package
 
 environment:
