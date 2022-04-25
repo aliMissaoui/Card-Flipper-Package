@@ -1,7 +1,7 @@
 name: card_flipper
-description: A new Flutter package project.
+description: Flutter package to implement an animated card flipper dashboard.
 version: 0.0.1
-homepage:
+homepage: https://github.com/aliMissaoui/Card-Flipper-Package
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
