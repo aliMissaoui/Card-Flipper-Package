@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/68671238/165011475-ce673de8-72c3-47c9-
 
 ```dart
 dependencies:
-  card_flipper: ^1.0.0
+  card_flipper: ^1.0.2
 ```
 
 2. Import the package and use it in your Flutter App.
@@ -73,127 +73,127 @@ class HomePage extends StatefulWidget {
 State<HomePage> createState() => \_HomePageState();
 }
 
-class \_HomePageState extends State<HomePage> {
-final List<CardViewModel> \_cardsToDisplay = [
-CardViewModel(
-backdropAssetPath: 'assets/images/china.jpg',
-address: 'China',
-capitol: 'Beijing',
-description:
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
-CardViewModel(
-backdropAssetPath: 'assets/images/korea.jpg',
-address: 'Korea',
-capitol: 'Seoul',
-description:
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
-CardViewModel(
-backdropAssetPath: 'assets/images/germany.jpg',
-address: 'Germany',
-capitol: 'Berlin',
-description:
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
-CardViewModel(
-backdropAssetPath: 'assets/images/italy.jpg',
-address: 'Italy',
-capitol: 'Rome',
-description:
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
-CardViewModel(
-backdropAssetPath: 'assets/images/switzerland.jpg',
-address: 'Switzerland',
-capitol: 'Bern',
-description:
-'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
-];
+class _HomePageState extends State<HomePage> {
+  final List<CardViewModel> _cardsToDisplay = [
+    CardViewModel(
+        backdropAssetPath: 'assets/images/china.jpg',
+        address: 'China',
+        capitol: 'Beijing',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
+    CardViewModel(
+        backdropAssetPath: 'assets/images/korea.jpg',
+        address: 'Korea',
+        capitol: 'Seoul',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
+    CardViewModel(
+        backdropAssetPath: 'assets/images/germany.jpg',
+        address: 'Germany',
+        capitol: 'Berlin',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
+    CardViewModel(
+        backdropAssetPath: 'assets/images/italy.jpg',
+        address: 'Italy',
+        capitol: 'Rome',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
+    CardViewModel(
+        backdropAssetPath: 'assets/images/switzerland.jpg',
+        address: 'Switzerland',
+        capitol: 'Bern',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus molestie faucibus mi. Lorem a ipsum justo, eros in massa justo. '),
+  ];
 
-@override
-Widget build(BuildContext context) {
-return Scaffold(
-body: CardFlipperScreen(
-cardsToDispaly: \_cardsToDisplay,
-topSpace: 20.0,
-backgroundColor: Colors.black,
-backWidget: Row(
-mainAxisAlignment: MainAxisAlignment.center,
-children: const [
-Icon(
-Icons.arrow_back_ios,
-color: Colors.white,
-size: 18.0,
-),
-SizedBox(
-width: 6.0,
-),
-Text(
-'back',
-style: TextStyle(
-fontFamily: 'Montserrat',
-fontSize: 14.0,
-fontWeight: FontWeight.bold,
-letterSpacing: 2.0,
-color: Colors.white,
-),
-),
-],
-),
-optionalActionWidget: const Icon(
-Icons.bookmarks_outlined,
-color: Colors.white,
-),
-onTapBackBtn: () {},
-onTapOptionalActionWidget: () {},
-onTapFunction: () {},
-topSectionTitleStyle: const TextStyle(
-fontFamily: 'Montserrat',
-fontSize: 20.0,
-fontWeight: FontWeight.bold,
-letterSpacing: 2.0,
-color: Colors.white,
-),
-middleSectionTitleStyle: const TextStyle(
-fontFamily: 'Montserrat',
-fontSize: 80.0,
-fontWeight: FontWeight.bold,
-letterSpacing: -4.0,
-color: Colors.white,
-),
-middleSectionDescriptionStyle: const TextStyle(
-fontFamily: 'Montserrat',
-fontSize: 16.0,
-fontWeight: FontWeight.normal,
-letterSpacing: 1.0,
-color: Colors.white,
-),
-mainBtnWidget: Row(
-mainAxisAlignment: MainAxisAlignment.center,
-mainAxisSize: MainAxisSize.min,
-children: const [
-Text(
-'Explore',
-style: TextStyle(
-fontFamily: 'Montserrat',
-fontSize: 16.0,
-fontWeight: FontWeight.bold,
-letterSpacing: 2.0,
-color: Colors.white,
-),
-),
-Padding(
-padding: EdgeInsets.only(
-left: 10.0,
-),
-child: Icon(
-Icons.arrow_forward_ios,
-color: Colors.white,
-size: 16.0,
-),
-),
-],
-),
-),
-);
-}
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: CardFlipperScreen(
+        cardsToDispaly: _cardsToDisplay,
+        topSpace: 20.0,
+        backgroundColor: Colors.black,
+        backWidget: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Icon(
+              Icons.arrow_back_ios,
+              color: Colors.white,
+              size: 18.0,
+            ),
+            SizedBox(
+              width: 6.0,
+            ),
+            Text(
+              'back',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.0,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+        optionalActionWidget: const Icon(
+          Icons.bookmarks_outlined,
+          color: Colors.white,
+        ),
+        onTapBackBtn: () {},
+        onTapOptionalActionWidget: () {},
+        onTapFunction: () {},
+        topSectionTitleStyle: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
+          color: Colors.white,
+        ),
+        middleSectionTitleStyle: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 80.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: -4.0,
+          color: Colors.white,
+        ),
+        middleSectionDescriptionStyle: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 16.0,
+          fontWeight: FontWeight.normal,
+          letterSpacing: 1.0,
+          color: Colors.white,
+        ),
+        mainBtnWidget: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: const [
+            Text(
+              'Explore',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                fontSize: 16.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.0,
+                color: Colors.white,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 10.0,
+              ),
+              child: Icon(
+                Icons.arrow_forward_ios,
+                color: Colors.white,
+                size: 16.0,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 ```
